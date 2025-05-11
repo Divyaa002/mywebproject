@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Knowledge Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1>General Knowledge Quiz</h1>
+            <div class="timer">Time Left: 10:00</div>
+        </div>
+        
+        <div class="start-screen" id="start-screen">
+            <p>This quiz contains 50 General Knowledge questions. You have 10 minutes to complete it.</p>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+        
+        <div class="quiz-screen" id="quiz-screen" style="display: none;">
+            <div class="question-number">Question <span id="current-qn">1</span> of 50</div>
+            <div class="question" id="question"></div>
+            <div class="options" id="options"></div>
+            <div class="navigation">
+                <button id="prev-btn">Previous</button>
+                <button id="next-btn">Next</button>
+                <button id="submit-btn" style="display: none;">Submit Quiz</button>
+            </div>
+        </div>
+        
+        <div class="result-screen" id="result-screen" style="display: none;">
+            <h2>Quiz Results</h2>
+            <div class="score">Your Score: <span id="score">0</span>/50</div>
+            <div class="time-taken">Time Taken: <span id="time-taken">0:00</span></div>
+            <div class="results" id="results"></div>
+            <button id="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
